@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Goodbai Studio — Contact</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Contact Goodbai Studio for stockist info, collaborations, or styling projects." />
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header" id="top">
+    <div class="wrap header-inner">
+      <a class="brand" href="index.html">
+        <img src="images/goodbai-logo.jpg" alt="Goodbai logo" class="brand-mark" />
+        <span class="brand-text">Goodbai Studio</span>
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">
+        <span class="nav-toggle-line"></span>
+        <span class="nav-toggle-line"></span>
+      </button>
+      <nav id="site-nav" class="site-nav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">Story</a></li>
+          <li><a href="contact.html" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="site-main">
+    <section class="page-hero">
+      <div class="wrap">
+        <p class="eyebrow">Contact</p>
+        <h1>Let&apos;s talk slow clothing.</h1>
+        <p class="lead">
+          For stockist information, styling requests, or collaboration ideas, leave a note below.
+        </p>
+      </div>
+    </section>
+
+    <section class="section wrap">
+      <div class="grid two">
+        <form class="contact-form" id="contactForm" novalidate>
+          <div class="field">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" required />
+            <p class="error" aria-live="polite"></p>
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" required />
+            <p class="error" aria-live="polite"></p>
+          </div>
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+            <p class="error" aria-live="polite"></p>
+          </div>
+          <button class="btn primary" type="submit">Send message</button>
+          <p id="formStatus" class="form-status" aria-live="polite"></p>
+        </form>
+        <aside class="alt-contacts">
+          <h2>Studio details</h2>
+          <p>Goodbai Studio moves between cities. For now, we live mostly online.</p>
+          <p><strong>Email</strong> goodbai.studio@example.com</p>
+          <p><strong>Instagram</strong> @goodbai.studio</p>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <small>© <span id="year"></span> Goodbai Studio. All rights reserved.</small>
+      <a href="#top" class="to-top">Back to top ↑</a>
+    </div>
+  </footer>
+</body>
+</html>
